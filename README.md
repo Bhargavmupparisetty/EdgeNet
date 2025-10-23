@@ -39,7 +39,7 @@ A state-of-the-art object detection model designed for real-time airport and run
 
 EdgeAirportNet features a sophisticated multi-component architecture:
 
-![Model Architecture](images/model_architecture.png)
+![Model Architecture](Architecture/model_architecture.png)
 
 
 ### Core Components
@@ -80,7 +80,7 @@ EdgeAirportNet features a sophisticated multi-component architecture:
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Bhargavmupparisetty/EdgeNet.git
-cd EdgeAirportNet
+cd EdgeNet
 ```
 
 2. **Install dependencies**
@@ -170,6 +170,9 @@ The model is evaluated using COCO-style metrics:
 - **mAP@0.75**: AP at IoU threshold 0.75 (strict metric)
 - **AR@100**: Average Recall with max 100 detections
 - **map_small/medium/large**: AP for different object scales
+
+  The evaluation metrics of the model are shown in figure below:
+  ![Model metrics](Metrics/training_metrics.png)
 
 
 ## Citation
