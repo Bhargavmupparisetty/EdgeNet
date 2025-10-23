@@ -389,7 +389,7 @@ def inference():
     model = EdgeAirportNet().to(device)
 
     # Load model weights
-    model_path = 'model/airport_detection.pt'
+    model_path = 'models/airport_detection.pt'
     if os.path.exists(model_path):
         model.load_state_dict(torch.load(model_path, map_location=device))
         print("Loaded model weights from", model_path)
