@@ -137,28 +137,6 @@ sample_dataset/
         └── ...
 ```
 
-### Label Format (YOLO)
-Each `.txt` file contains one annotation per line:
-```
-class_id center_x center_y width height
-```
-- All values are normalized to [0, 1]
-- `class_id`: 0 for runway, 1 for taxiway (or your custom classes)
-
-
-## Model Details
-
-### Architecture Specifications
-
-| Component | Details |
-|-----------|---------|
-| **Backbone** | GhostNetV2-1.0x (pretrained) |
-| **Feature Channels** | [40, 112, 160, 960] → 128 (unified) |
-| **Input Size** | 512×512 pixels |
-| **Output Levels** | 4 (P2, P3, P4, P5) |
-| **Strides** | [4, 8, 16, 32] |
-| **Anchor-Free** | Yes (FCOS-style) |
-| **Total Parameters** | ~6-7M |
 
 
 ##  Evaluation Metrics
@@ -174,19 +152,30 @@ The model is evaluated using COCO-style metrics:
   The evaluation metrics of the model are shown in figure below:
   ![Model metrics](metrics/training_metrics.png)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Dataset
+
+A curated dataset of airports accross Indian subcontinent is collected from Google Earth Pro.
+
+The *Airport Dataset* used in this work is available on Kaggle:  
+[https://doi.org/10.34740/kaggle/ds/6757673](https://doi.org/10.34740/kaggle/ds/6757673)  
+
+Please cite the dataset if used in your project.
+
 
 ## Citation
 
-If you use EdgeAirportNet in your research, please cite:
+If you use EdgeNet in your research, please cite:
 
 ```bibtex
 @software{edgenet2025,
-  title={EdgeAirportNet: A Compact Model for Real-Time Airport Detection on Edge Devices},
+  title={EdgeNet: A Compact Model for Real-Time Airport Detection on Edge Devices},
   author={Bhargav Mupparisetty},
   year={2025},
   url={https://github.com/Bhargavmupparisetty/EdgeNet}
 }
 ```
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
