@@ -1,9 +1,9 @@
-README for EdgeNet-X Minimal Dataset
+README for EdgeNet Minimal Dataset
 -------------------------------------
 
 This archive contains the minimal dataset, model weights, and inference script necessary to reproduce the core results of the manuscript titled:
 
-"EdgeNet-X: An Edge-Optimized Model for Airport Detection"
+"EdgeNet: A Compact Model for Real-Time Airport Detection on Edge Devices"
 
 Contents:
 - Pretrained model (model/airport_detection.pth)
