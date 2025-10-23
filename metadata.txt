@@ -1,0 +1,22 @@
+Dataset format:
+
+sample_dataset
+	|
+	|__ images
+	|	|__ train
+	|	|__ val
+	|
+	|__ labels
+		|__ train
+		|__ val
+
+
+Each label file corresponds to one image and contains one object per line:
+<class_id> <x_center> <y_center> <width> <height>
+
+- All values are normalized between 0 and 1
+- Image size: 640×640 pixels (if applicable)
+- Class ID:
+    0 = Airport (or as defined in your training)
+
+This sample includes 8 randomly selected validation images with matching labels, used for reproducibility and peer verification.
