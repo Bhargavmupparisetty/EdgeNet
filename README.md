@@ -172,7 +172,7 @@ The model is evaluated using COCO-style metrics:
 - **map_small/medium/large**: AP for different object scales
 
   The evaluation metrics of the model are shown in figure below:
-  ![Model metrics](Metrics/training_metrics.png)
+  ![Model metrics](metrics/training_metrics.png)
 
 
 ## Citation
