@@ -1,6 +1,6 @@
 # EdgeNet: A Compact Model for Real-Time Airport Detection on Edge Devices
 
-A state-of-the-art object detection model designed for real-time airport and runway detection on resource-constrained edge devices. EdgeAirportNet combines efficiency with sophisticated deep learning techniques including Dynamic Head, Dynamic NMS, and Bi-directional Feature Pyramid Networks.
+A state-of-the-art object detection model designed for real-time airport and runway detection on resource-constrained edge devices. EdgeNet combines efficiency with sophisticated deep learning techniques including Dynamic Head, Dynamic NMS, and Bi-directional Feature Pyramid Networks.
 
 ##  Key Features
 
@@ -37,7 +37,7 @@ A state-of-the-art object detection model designed for real-time airport and run
 
 ## Architecture
 
-EdgeAirportNet features a sophisticated multi-component architecture:
+EdgeNet features a sophisticated multi-component architecture:
 
 ![Model Architecture](Architecture/model_architecture.png)
 
@@ -115,7 +115,7 @@ This will:
 
 ## Dataset Structure
 
-EdgeAirportNet expects data in YOLO format:
+EdgeNet expects data in YOLO format:
 
 ```
 sample_dataset/
